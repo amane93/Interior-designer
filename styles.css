@@ -158,6 +158,8 @@ footer .container {
 }
 
 .container .nav ul {
+    margin: 0;
+    padding: 0;
     text-align: center;
     line-height: 90px;
     display: none;
@@ -201,13 +203,13 @@ header {
 
  .container .pic .pic1 img {
     width: 80%;
-    height:60%;
+    height:auto;
     padding: 40px 30px 10px 30px;
 }
 
 .container .pic .profile {
    width: 50%;
-   font-size:60%;
+   font-size:50%;
    transform: translate(70%,-30%);
 }
 
