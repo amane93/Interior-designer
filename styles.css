@@ -1,0 +1,227 @@
+body {
+    background: rgb(19, 19, 19);
+    color: white;
+    font-family: poppins;
+}
+
+.container {
+    margin: 0 auto;
+
+    padding: 0 60px;
+}
+
+label, #toggle {
+    float: right;
+    font-size: 29px;
+    display: none;
+}
+
+.container .nav {
+    width:90%;
+    height: 200px;
+    transition: background 0.5s;
+}
+
+.container .nav ul {
+
+    list-style: none;
+    text-decoration: none;
+    float: right;
+
+}
+
+.container .nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+    font-size: 120%;
+    
+}
+
+.container .nav .logo {
+    line-height: 80px;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+    border: 1px solid white;
+    margin-left: 180px;
+    padding: 5px;
+}
+
+.container .nav .logo:hover {
+    border: 3px solid rgb(233, 144, 42);
+    color: rgb(233, 144, 42) ;
+}
+
+.container .nav ul li:hover {
+    cursor:pointer;
+    font-weight: bolder;
+    color: rgb(233, 144, 42);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Shifting to main body of the site */
+
+header {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns:  10% 30% 50% ;
+    grid-column-gap: 40px;
+    height: 600px;
+
+}
+
+.container .main {
+
+    grid-column: 2/3;
+    font-size: 150%;
+    font-family:Montserrat;
+    font-weight:normal
+
+}
+
+
+.container .pic .pic1 img {
+    grid-column: 3/4;
+    height: 450px;
+    width: 590px;
+}
+
+ .btn:hover{
+     cursor:pointer;
+    font-weight: bolder;
+    color:rgb(233, 144, 42);
+    
+}
+
+
+footer .container {
+    text-align: center;
+}
+
+.container .pic {
+    position: relative;
+    z-index: -1000;
+}
+
+.pic .profile {
+    height:200px;
+    width: 400px;
+    background:  rgb(19, 19, 19);
+    position:absolute;
+    transform: translate(42%,-50%);
+  
+}
+
+.pic .profile .pic2 img {
+    width:20%;
+    height: auto;
+    border-radius: 100%;
+    float: left;
+    margin: 13px 25px 0px 30px;
+}
+
+.pic .profile #head {
+    line-height: 10px;
+    font-size: 85%;
+}
+
+.pic .profile #head p {
+    color:rgb(102, 99, 99)
+}
+
+.pic .profile #info {
+    padding-top: 20px;
+    margin-left: 30px;
+    font-size: 150%;
+}
+
+.pic .profile:hover {
+    background: grey;
+}
+
+/* *****************************************Adding media Queries *******************************************/
+
+@media only screen and (max-width: 800px) {
+.container {
+    margin: 0;
+    padding: 0px 40px;
+}
+
+
+.container .nav {
+    height: auto;
+    
+}
+.container .nav .logo{
+   margin: 0px;
+    
+}
+
+.container .nav ul {
+    text-align: center;
+    line-height: 90px;
+    display: none;
+  
+}
+.container .nav ul li {
+    width: 100%;
+
+}
+
+
+label {
+    display: block;
+    font-size: 30px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+#toggle:checked +  ul{
+    display: block;
+    height:100%
+
+}
+
+.container .main {
+    margin: 30px 30px;
+}
+
+header {
+    display: unset;
+
+  
+}
+
+ .container .main p {
+   width: 70%;
+   font-size: 90%;
+   color: rgb(156, 149, 149);
+
+}
+
+ .container .pic .pic1 img {
+    width: 80%;
+    height:60%;
+    padding: 40px 30px 10px 30px;
+}
+
+.container .pic .profile {
+   width: 50%;
+   font-size:60%;
+   transform: translate(70%,-30%);
+}
+
+footer {
+    margin-top: 140px;
+    margin-bottom: 40px;
+ 
+
+}
+
+footer .container span {
+    border-top: 2px solid rgb(131, 130, 130);
+    padding: 10px 50px 5px 50px;
+   
+}
+
+}
